@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customizable Digital Clock</title>
+    <link rel="stylesheet" href="project1.css">
+</head>
+<body>
+  <div id="clock">00:00:00</div>
+
+  <div class="controls">
+    <label>
+      <input type="checkbox" id="toggle-format">
+      24-Hour Format
+    </label>
+    <label>
+      Font Size:
+      <input type="number" id="font-size" min="16" max="100" step="1" value="48">
+    </label>
+    <label>
+      Color Scheme:
+      <input type="color" id="color-scheme" value="#333333">
+    </label>
+  </div>
+
+  <div class="alarm-settings">
+    <label>
+      Set Alarm:
+      <input type="time" id="alarm-time">
+    </label>
+    <button id="set-alarm">Set Alarm</button>
+    <button id="clear-alarm">Clear Alarm</button>
+    <p id="alarm-message">ALARM! Time's up!</p>
+  </div>
+
+  <script src="project1.js"></script>
+</body>
+</html>
